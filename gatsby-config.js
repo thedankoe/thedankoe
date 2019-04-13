@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `DANKOE`,
+    description: `Freelancing, business, and self development tips sent bi-weekly as an email newsletter.`,
+    author: `@thedankoe`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -11,6 +11,13 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-mailchimp',
+      options: {
+        endpoint:
+          'https://thedankoe.us18.list-manage.com/subscribe/post?u=0a4622b59a0781fb3d5ed4723&amp;id=7cec4b0dfd',
       },
     },
     `gatsby-transformer-sharp`,
